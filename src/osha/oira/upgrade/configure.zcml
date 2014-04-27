@@ -84,5 +84,17 @@
 
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+        source="8"
+        destination="9"
+        profile="osha.oira:default">
+
+    <genericsetup:upgradeStep
+        title="Add 2 columns to the company report"
+        description="Required for the extended company survey"
+        handler=".upgrade.add_columns_to_company_survey"/>
+
+  </genericsetup:upgradeSteps>
+
 </configure>
 

@@ -4,6 +4,7 @@ from euphorie.client.sector import IClientSector
 from euphorie.content.survey import ISurvey
 from euphorie.deployment.upgrade.utils import TableExists
 from plone.dexterity import utils
+from sqlalchemy.engine.reflection import Inspector
 from z3c.saconfig import Session
 from zope.app.component.hooks import getSite
 from zope.sqlalchemy import datamanager
@@ -115,3 +116,22 @@ def update_types_information(context):
     """ Reimport types to activate new behavior """
     setup = getToolByName(context, 'portal_setup')
     setup.runImportStepFromProfile('profile-osha.oira:default', 'typeinfo')
+
+
+def add_columns_to_company_survey(context):
+    session = Session()
+    inspector = Inspector.from_engine(session.bind)
+    columns = [c['name']
+               for c in inspector.get_columns(model.Company.__table__.name)]
+    if 'needs_met' not in columns:
+        log.info('Adding needs_met column for company')
+        session.execute(
+            "ALTER TABLE %s ADD needs_met BOOL DEFAULT 'f' NOT NULL" %
+            model.Company.__table__.name)
+        datamanager.mark_changed(session)
+    if 'recommend_tool' not in columns:
+        log.info('Adding recommend_tool column for company')
+        session.execute(
+            "ALTER TABLE %s ADD recommend_tool BOOL DEFAULT 'f' NOT NULL" %
+            model.Company.__table__.name)
+        datamanager.mark_changed(session)
