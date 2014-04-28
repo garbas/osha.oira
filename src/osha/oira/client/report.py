@@ -4,6 +4,7 @@ from datetime import datetime
 from euphorie.client import model
 from euphorie.client import report
 from euphorie.client import survey
+from euphorie.client.update import redirectOnSurveyUpdate
 from euphorie.client.session import SessionManager
 from euphorie.ghost import PathGhost
 from five import grok
@@ -11,6 +12,7 @@ from openpyxl.cell import get_column_letter
 from openpyxl.workbook import Workbook
 from osha.oira import _
 from osha.oira.client import utils
+from osha.oira.client import model as oshamodel
 from osha.oira.client.interfaces import IOSHAIdentificationPhaseSkinLayer
 from osha.oira.client.interfaces import IOSHAReportPhaseSkinLayer
 from plonetheme.nuplone.utils import formatDate
@@ -88,6 +90,26 @@ class ReportLanding(grok.View):
     grok.layer(IOSHAReportPhaseSkinLayer)
     grok.template("report_landing")
     grok.name("view")
+
+    def getNodes(self):
+        """Return an orderer list of all tree items for the current survey."""
+        query = Session.query(model.SurveyTreeItem)\
+            .filter(model.SurveyTreeItem.session == self.session)\
+            .filter(sql.not_(model.SKIPPED_PARENTS))\
+            .filter(sql.or_(model.MODULE_WITH_RISK_OR_TOP5_FILTER,
+                            model.RISK_PRESENT_OR_TOP5_FILTER))\
+            .order_by(model.SurveyTreeItem.path)
+        return query.all()
+
+    def update(self):
+        if redirectOnSurveyUpdate(self.request):
+            return
+
+        self.session = SessionManager.session
+        #if self.session.company is None:
+        # replace with: if it's a euphorie.model company
+        self.session.company = oshamodel.Company()
+        self.nodes = self.getNodes()
 
 
 class ActionPlanTimeline(report.ActionPlanTimeline):
