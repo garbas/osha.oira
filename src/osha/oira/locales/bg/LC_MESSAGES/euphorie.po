@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: osha.oira 1.2.1dev\n"
 "Report-Msgid-Bugs-To: brand@syslab.com\n"
-"POT-Creation-Date: 2014-02-24 15:35+0100\n"
+"POT-Creation-Date: 2014-04-27 20:04+0200\n"
 "PO-Revision-Date: 2013-08-15 11:18+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bg <LL@li.org>\n"
@@ -737,6 +737,29 @@ msgstr "3-о тримесечие"
 msgid "4th Quarter"
 msgstr "4-о тримесечие"
 
+#. Default: Did this OiRA tool meet to your needs?
+#: src/osha/oira/client/company.py:21
+msgid "label_needs_met"
+msgstr ""
+
+#. Default: Yes
+#: src/osha/oira/client/company.py:25 src/osha/oira/client/company.py:36
+#: src/osha/oira/client/templates/risk_identification.pt:22
+msgid "label_yes"
+msgstr "Да"
+
+#. Default: No
+#: src/osha/oira/client/company.py:26 src/osha/oira/client/company.py:37
+#: src/osha/oira/client/templates/risk_identification.pt:23
+msgid "label_no"
+msgstr "Не"
+
+#. Default: Would you recommend this OiRA tool to an enterprise similar to
+#. yours ?
+#: src/osha/oira/client/company.py:31
+msgid "label_recommend_tool"
+msgstr ""
+
 #: src/osha/oira/client/country.py:53
 msgid "Save"
 msgstr "Запазване"
@@ -1081,7 +1104,7 @@ msgstr "Към доклад"
 #: src/osha/oira/client/templates/profile.pt:71
 #: src/osha/oira/client/templates/report.pt:50
 #: src/osha/oira/client/templates/report_actionplan.pt:270
-#: src/osha/oira/client/templates/report_company.pt:62
+#: src/osha/oira/client/templates/report_company.pt:65
 #: src/osha/oira/client/templates/report_identification.pt:85
 #: src/osha/oira/client/templates/report_landing.pt:68
 #: src/osha/oira/client/templates/risk_actionplan.pt:231
@@ -1102,7 +1125,7 @@ msgstr "Подготовка"
 #: src/osha/oira/client/templates/profile.pt:72
 #: src/osha/oira/client/templates/report.pt:51
 #: src/osha/oira/client/templates/report_actionplan.pt:271
-#: src/osha/oira/client/templates/report_company.pt:63
+#: src/osha/oira/client/templates/report_company.pt:66
 #: src/osha/oira/client/templates/report_identification.pt:86
 #: src/osha/oira/client/templates/report_landing.pt:69
 #: src/osha/oira/client/templates/risk_actionplan.pt:232
@@ -1123,7 +1146,7 @@ msgstr "Подготовка"
 #: src/osha/oira/client/templates/profile.pt:76
 #: src/osha/oira/client/templates/report.pt:56
 #: src/osha/oira/client/templates/report_actionplan.pt:276
-#: src/osha/oira/client/templates/report_company.pt:68
+#: src/osha/oira/client/templates/report_company.pt:71
 #: src/osha/oira/client/templates/report_identification.pt:91
 #: src/osha/oira/client/templates/report_landing.pt:74
 #: src/osha/oira/client/templates/risk_actionplan.pt:237
@@ -1144,7 +1167,7 @@ msgstr "Определяне"
 #: src/osha/oira/client/templates/profile.pt:77
 #: src/osha/oira/client/templates/report.pt:57
 #: src/osha/oira/client/templates/report_actionplan.pt:277
-#: src/osha/oira/client/templates/report_company.pt:69
+#: src/osha/oira/client/templates/report_company.pt:72
 #: src/osha/oira/client/templates/report_identification.pt:92
 #: src/osha/oira/client/templates/report_landing.pt:75
 #: src/osha/oira/client/templates/risk_actionplan.pt:238
@@ -1165,7 +1188,7 @@ msgstr "Определяне"
 #: src/osha/oira/client/templates/profile.pt:80
 #: src/osha/oira/client/templates/report.pt:62
 #: src/osha/oira/client/templates/report_actionplan.pt:282
-#: src/osha/oira/client/templates/report_company.pt:74
+#: src/osha/oira/client/templates/report_company.pt:77
 #: src/osha/oira/client/templates/report_identification.pt:97
 #: src/osha/oira/client/templates/report_landing.pt:80
 #: src/osha/oira/client/templates/risk_actionplan.pt:243
@@ -1186,7 +1209,7 @@ msgstr "Оценяване"
 #: src/osha/oira/client/templates/profile.pt:81
 #: src/osha/oira/client/templates/report.pt:63
 #: src/osha/oira/client/templates/report_actionplan.pt:283
-#: src/osha/oira/client/templates/report_company.pt:75
+#: src/osha/oira/client/templates/report_company.pt:78
 #: src/osha/oira/client/templates/report_identification.pt:98
 #: src/osha/oira/client/templates/report_landing.pt:81
 #: src/osha/oira/client/templates/risk_actionplan.pt:244
@@ -1207,7 +1230,7 @@ msgstr "Оценяване"
 #: src/osha/oira/client/templates/profile.pt:84
 #: src/osha/oira/client/templates/report.pt:68
 #: src/osha/oira/client/templates/report_actionplan.pt:288
-#: src/osha/oira/client/templates/report_company.pt:80
+#: src/osha/oira/client/templates/report_company.pt:83
 #: src/osha/oira/client/templates/report_identification.pt:103
 #: src/osha/oira/client/templates/report_landing.pt:86
 #: src/osha/oira/client/templates/risk_actionplan.pt:249
@@ -1228,7 +1251,7 @@ msgstr "План за действие"
 #: src/osha/oira/client/templates/profile.pt:85
 #: src/osha/oira/client/templates/report.pt:69
 #: src/osha/oira/client/templates/report_actionplan.pt:289
-#: src/osha/oira/client/templates/report_company.pt:81
+#: src/osha/oira/client/templates/report_company.pt:84
 #: src/osha/oira/client/templates/report_identification.pt:104
 #: src/osha/oira/client/templates/report_landing.pt:87
 #: src/osha/oira/client/templates/risk_actionplan.pt:250
@@ -1249,7 +1272,7 @@ msgstr "План за действие"
 #: src/osha/oira/client/templates/profile.pt:88
 #: src/osha/oira/client/templates/report.pt:74
 #: src/osha/oira/client/templates/report_actionplan.pt:294
-#: src/osha/oira/client/templates/report_company.pt:86
+#: src/osha/oira/client/templates/report_company.pt:89
 #: src/osha/oira/client/templates/report_identification.pt:109
 #: src/osha/oira/client/templates/report_landing.pt:92
 #: src/osha/oira/client/templates/risk_actionplan.pt:258
@@ -1270,7 +1293,7 @@ msgstr "Доклад"
 #: src/osha/oira/client/templates/profile.pt:89
 #: src/osha/oira/client/templates/report.pt:75
 #: src/osha/oira/client/templates/report_actionplan.pt:295
-#: src/osha/oira/client/templates/report_company.pt:87
+#: src/osha/oira/client/templates/report_company.pt:90
 #: src/osha/oira/client/templates/report_identification.pt:110
 #: src/osha/oira/client/templates/report_landing.pt:93
 #: src/osha/oira/client/templates/risk_actionplan.pt:259
@@ -1291,7 +1314,7 @@ msgstr "Доклад"
 #: src/osha/oira/client/templates/profile.pt:95
 #: src/osha/oira/client/templates/report.pt:82
 #: src/osha/oira/client/templates/report_actionplan.pt:307
-#: src/osha/oira/client/templates/report_company.pt:94
+#: src/osha/oira/client/templates/report_company.pt:97
 #: src/osha/oira/client/templates/report_identification.pt:117
 #: src/osha/oira/client/templates/report_landing.pt:100
 #: src/osha/oira/client/templates/risk_actionplan.pt:266
@@ -1312,7 +1335,7 @@ msgstr "Излизане"
 #: src/osha/oira/client/templates/profile.pt:96
 #: src/osha/oira/client/templates/report.pt:83
 #: src/osha/oira/client/templates/report_actionplan.pt:308
-#: src/osha/oira/client/templates/report_company.pt:95
+#: src/osha/oira/client/templates/report_company.pt:98
 #: src/osha/oira/client/templates/report_identification.pt:118
 #: src/osha/oira/client/templates/report_landing.pt:101
 #: src/osha/oira/client/templates/risk_actionplan.pt:267
@@ -1334,7 +1357,7 @@ msgstr "Моите оценки"
 #: src/osha/oira/client/templates/register.pt:41
 #: src/osha/oira/client/templates/report.pt:84
 #: src/osha/oira/client/templates/report_actionplan.pt:309
-#: src/osha/oira/client/templates/report_company.pt:96
+#: src/osha/oira/client/templates/report_company.pt:99
 #: src/osha/oira/client/templates/report_identification.pt:119
 #: src/osha/oira/client/templates/report_landing.pt:102
 #: src/osha/oira/client/templates/risk_actionplan.pt:268
@@ -1354,7 +1377,7 @@ msgstr "Помощ"
 #: src/osha/oira/client/templates/module_evaluation.pt:82
 #: src/osha/oira/client/templates/report.pt:85
 #: src/osha/oira/client/templates/report_actionplan.pt:310
-#: src/osha/oira/client/templates/report_company.pt:97
+#: src/osha/oira/client/templates/report_company.pt:100
 #: src/osha/oira/client/templates/report_identification.pt:120
 #: src/osha/oira/client/templates/risk_actionplan.pt:269
 #: src/osha/oira/client/templates/risk_evaluation.pt:174
@@ -1371,7 +1394,7 @@ msgstr "Статус"
 #: src/osha/oira/client/templates/profile.pt:98
 #: src/osha/oira/client/templates/report.pt:86
 #: src/osha/oira/client/templates/report_actionplan.pt:311
-#: src/osha/oira/client/templates/report_company.pt:98
+#: src/osha/oira/client/templates/report_company.pt:101
 #: src/osha/oira/client/templates/report_identification.pt:121
 #: src/osha/oira/client/templates/report_landing.pt:103
 #: src/osha/oira/client/templates/risk_actionplan.pt:270
@@ -1495,7 +1518,7 @@ msgstr "Стартиране на определянето на риска"
 #: src/osha/oira/client/templates/module_actionplan.pt:52
 #: src/osha/oira/client/templates/module_evaluation.pt:38
 #: src/osha/oira/client/templates/register.pt:34
-#: src/osha/oira/client/templates/report_company.pt:53
+#: src/osha/oira/client/templates/report_company.pt:56
 #: src/osha/oira/client/templates/risk_actionplan.pt:209
 #: src/osha/oira/client/templates/risk_evaluation.pt:119
 #: src/osha/oira/client/templates/risk_identification.pt:28
@@ -1581,7 +1604,7 @@ msgstr "Добавете друга точка"
 #. Default: Save and continue
 #: src/osha/oira/client/templates/profile.pt:64
 #: src/osha/oira/client/templates/report.pt:38
-#: src/osha/oira/client/templates/report_company.pt:55
+#: src/osha/oira/client/templates/report_company.pt:58
 #: src/osha/oira/client/templates/risk_actionplan.pt:211
 #: src/osha/oira/client/templates/risk_evaluation.pt:120
 #: src/osha/oira/client/templates/risk_identification.pt:29
@@ -1817,7 +1840,7 @@ msgid "referer_other"
 msgstr "други канал"
 
 #. Default: Skip this step
-#: src/osha/oira/client/templates/report_company.pt:54
+#: src/osha/oira/client/templates/report_company.pt:57
 msgid "label_skip"
 msgstr "Пропусни"
 
@@ -1999,11 +2022,11 @@ msgstr ""
 "неизбежен) намаляване на риска; 2) конкретните действия, които се изискват, "
 "за да бъде следван подходът (за елиминиране или намаляване на риска); 3) "
 "експертното ниво, което е необходимо, за да бъде изпълнена мярката, например "
-"„здрав разум (не са необходими познания по БЗР)”, “не са "
-"нужни определени експертни познания по БЗР, но се изискват минимални "
-"познания или обучение по БЗР и/или консултация с ръководство по БЗР”, или "
-"“необходимо е експертно ниво по БЗР”. Тук можете да опишете и други "
-"допълнителни изисквания (ако има такива)."
+"„здрав разум (не са необходими познания по БЗР)”, “не са нужни определени "
+"експертни познания по БЗР, но се изискват минимални познания или обучение по "
+"БЗР и/или консултация с ръководство по БЗР”, или “необходимо е експертно "
+"ниво по БЗР”. Тук можете да опишете и други допълнителни изисквания (ако има "
+"такива)."
 
 #. Default: Appoint someone in your company to be responsible for the
 #. implementation of this measure. This person will have the authority to take
@@ -2243,16 +2266,6 @@ msgstr "Среден"
 #: src/osha/oira/client/templates/risk_evaluation.pt:114
 msgid "priority_high"
 msgstr "Висок"
-
-#. Default: Yes
-#: src/osha/oira/client/templates/risk_identification.pt:22
-msgid "label_yes"
-msgstr "Да"
-
-#. Default: No
-#: src/osha/oira/client/templates/risk_identification.pt:23
-msgid "label_no"
-msgstr "Не"
 
 #. Default: Not applicable
 #: src/osha/oira/client/templates/risk_identification.pt:24
@@ -3119,8 +3132,8 @@ msgstr "Знаете ли за всички рискове?"
 #: src/osha/oira/templates/default_introduction.pt:7
 msgid "intro_risk_aware"
 msgstr ""
-"Включително рисковете за Вашите служители и Вашето оборудване? Какво ще стане"
-", ако се случи нещастен случай с една от машините? Както ще стане, ако "
+"Включително рисковете за Вашите служители и Вашето оборудване? Какво ще "
+"стане, ако се случи нещастен случай с една от машините? Както ще стане, ако "
 "служител бъде изложен на влиянието на опасни вещества? Оценката на риска Ви "
 "помага да дефинирате тези рискове и да се справите с тях лице в лице. "
 "Оценката на риска се състои главно от две части: едната е да се определят "

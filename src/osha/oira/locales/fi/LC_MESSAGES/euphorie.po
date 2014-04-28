@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: osha.oira 1.2.30.dev0\n"
 "Report-Msgid-Bugs-To: brand@syslab.com\n"
-"POT-Creation-Date: 2014-02-24 15:35+0100\n"
+"POT-Creation-Date: 2014-04-27 20:04+0200\n"
 "PO-Revision-Date: 2013-08-15 11:26+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -722,6 +722,29 @@ msgstr "3. neljännes"
 msgid "4th Quarter"
 msgstr "4. neljännes"
 
+#. Default: Did this OiRA tool meet to your needs?
+#: src/osha/oira/client/company.py:21
+msgid "label_needs_met"
+msgstr ""
+
+#. Default: Yes
+#: src/osha/oira/client/company.py:25 src/osha/oira/client/company.py:36
+#: src/osha/oira/client/templates/risk_identification.pt:22
+msgid "label_yes"
+msgstr "Kyllä"
+
+#. Default: No
+#: src/osha/oira/client/company.py:26 src/osha/oira/client/company.py:37
+#: src/osha/oira/client/templates/risk_identification.pt:23
+msgid "label_no"
+msgstr "Ei"
+
+#. Default: Would you recommend this OiRA tool to an enterprise similar to
+#. yours ?
+#: src/osha/oira/client/company.py:31
+msgid "label_recommend_tool"
+msgstr ""
+
 #: src/osha/oira/client/country.py:53
 msgid "Save"
 msgstr "Tallenna"
@@ -927,8 +950,7 @@ msgstr "Riskit, jotka on tunnistettu, mutta joilla EI ole toimintasuunnitelmaa"
 #: src/osha/oira/client/templates/report_actionplan.pt:55
 #: src/osha/oira/client/templates/report_actionplan.pt:187
 msgid "header_unanswered_risks"
-msgstr ""
-"Vaarat/ongelmat, jotka on ja joita vielä käsitellään"
+msgstr "Vaarat/ongelmat, jotka on ja joita vielä käsitellään"
 
 #. Default: Hazards/problems that have been managed or are not present in your
 #. organisation
@@ -1015,8 +1037,8 @@ msgstr "Onko vaara- tai haittatekijä mahdollista poistaa?"
 #: src/osha/oira/client/templates/actionplan.pt:29
 msgid "expl_actionplan_3"
 msgstr ""
-"Onko riski vältettävissä? Voiko sen poistaa kokonaan? "
-"Arvioi ${expl_actionplan_4_and_5}"
+"Onko riski vältettävissä? Voiko sen poistaa kokonaan? Arvioi "
+"${expl_actionplan_4_and_5}"
 
 #. Default: If certain risks are not avoidable, how can they be reduced to a
 #. level at which the health and safety of those exposed is not compromised?
@@ -1065,7 +1087,7 @@ msgstr "Siirry raporttiin"
 #: src/osha/oira/client/templates/profile.pt:71
 #: src/osha/oira/client/templates/report.pt:50
 #: src/osha/oira/client/templates/report_actionplan.pt:270
-#: src/osha/oira/client/templates/report_company.pt:62
+#: src/osha/oira/client/templates/report_company.pt:65
 #: src/osha/oira/client/templates/report_identification.pt:85
 #: src/osha/oira/client/templates/report_landing.pt:68
 #: src/osha/oira/client/templates/risk_actionplan.pt:231
@@ -1086,7 +1108,7 @@ msgstr "Suunnittelu"
 #: src/osha/oira/client/templates/profile.pt:72
 #: src/osha/oira/client/templates/report.pt:51
 #: src/osha/oira/client/templates/report_actionplan.pt:271
-#: src/osha/oira/client/templates/report_company.pt:63
+#: src/osha/oira/client/templates/report_company.pt:66
 #: src/osha/oira/client/templates/report_identification.pt:86
 #: src/osha/oira/client/templates/report_landing.pt:69
 #: src/osha/oira/client/templates/risk_actionplan.pt:232
@@ -1107,7 +1129,7 @@ msgstr "Suunnittelu"
 #: src/osha/oira/client/templates/profile.pt:76
 #: src/osha/oira/client/templates/report.pt:56
 #: src/osha/oira/client/templates/report_actionplan.pt:276
-#: src/osha/oira/client/templates/report_company.pt:68
+#: src/osha/oira/client/templates/report_company.pt:71
 #: src/osha/oira/client/templates/report_identification.pt:91
 #: src/osha/oira/client/templates/report_landing.pt:74
 #: src/osha/oira/client/templates/risk_actionplan.pt:237
@@ -1128,7 +1150,7 @@ msgstr "Tunnistaminen"
 #: src/osha/oira/client/templates/profile.pt:77
 #: src/osha/oira/client/templates/report.pt:57
 #: src/osha/oira/client/templates/report_actionplan.pt:277
-#: src/osha/oira/client/templates/report_company.pt:69
+#: src/osha/oira/client/templates/report_company.pt:72
 #: src/osha/oira/client/templates/report_identification.pt:92
 #: src/osha/oira/client/templates/report_landing.pt:75
 #: src/osha/oira/client/templates/risk_actionplan.pt:238
@@ -1149,7 +1171,7 @@ msgstr "Tunnistaminen"
 #: src/osha/oira/client/templates/profile.pt:80
 #: src/osha/oira/client/templates/report.pt:62
 #: src/osha/oira/client/templates/report_actionplan.pt:282
-#: src/osha/oira/client/templates/report_company.pt:74
+#: src/osha/oira/client/templates/report_company.pt:77
 #: src/osha/oira/client/templates/report_identification.pt:97
 #: src/osha/oira/client/templates/report_landing.pt:80
 #: src/osha/oira/client/templates/risk_actionplan.pt:243
@@ -1170,7 +1192,7 @@ msgstr "Arviointi"
 #: src/osha/oira/client/templates/profile.pt:81
 #: src/osha/oira/client/templates/report.pt:63
 #: src/osha/oira/client/templates/report_actionplan.pt:283
-#: src/osha/oira/client/templates/report_company.pt:75
+#: src/osha/oira/client/templates/report_company.pt:78
 #: src/osha/oira/client/templates/report_identification.pt:98
 #: src/osha/oira/client/templates/report_landing.pt:81
 #: src/osha/oira/client/templates/risk_actionplan.pt:244
@@ -1191,7 +1213,7 @@ msgstr "Arviointi"
 #: src/osha/oira/client/templates/profile.pt:84
 #: src/osha/oira/client/templates/report.pt:68
 #: src/osha/oira/client/templates/report_actionplan.pt:288
-#: src/osha/oira/client/templates/report_company.pt:80
+#: src/osha/oira/client/templates/report_company.pt:83
 #: src/osha/oira/client/templates/report_identification.pt:103
 #: src/osha/oira/client/templates/report_landing.pt:86
 #: src/osha/oira/client/templates/risk_actionplan.pt:249
@@ -1212,7 +1234,7 @@ msgstr "Toimintasuunnitelma"
 #: src/osha/oira/client/templates/profile.pt:85
 #: src/osha/oira/client/templates/report.pt:69
 #: src/osha/oira/client/templates/report_actionplan.pt:289
-#: src/osha/oira/client/templates/report_company.pt:81
+#: src/osha/oira/client/templates/report_company.pt:84
 #: src/osha/oira/client/templates/report_identification.pt:104
 #: src/osha/oira/client/templates/report_landing.pt:87
 #: src/osha/oira/client/templates/risk_actionplan.pt:250
@@ -1233,7 +1255,7 @@ msgstr "Toimintasuunnitelma"
 #: src/osha/oira/client/templates/profile.pt:88
 #: src/osha/oira/client/templates/report.pt:74
 #: src/osha/oira/client/templates/report_actionplan.pt:294
-#: src/osha/oira/client/templates/report_company.pt:86
+#: src/osha/oira/client/templates/report_company.pt:89
 #: src/osha/oira/client/templates/report_identification.pt:109
 #: src/osha/oira/client/templates/report_landing.pt:92
 #: src/osha/oira/client/templates/risk_actionplan.pt:258
@@ -1254,7 +1276,7 @@ msgstr "Raportti"
 #: src/osha/oira/client/templates/profile.pt:89
 #: src/osha/oira/client/templates/report.pt:75
 #: src/osha/oira/client/templates/report_actionplan.pt:295
-#: src/osha/oira/client/templates/report_company.pt:87
+#: src/osha/oira/client/templates/report_company.pt:90
 #: src/osha/oira/client/templates/report_identification.pt:110
 #: src/osha/oira/client/templates/report_landing.pt:93
 #: src/osha/oira/client/templates/risk_actionplan.pt:259
@@ -1275,7 +1297,7 @@ msgstr "Raportti"
 #: src/osha/oira/client/templates/profile.pt:95
 #: src/osha/oira/client/templates/report.pt:82
 #: src/osha/oira/client/templates/report_actionplan.pt:307
-#: src/osha/oira/client/templates/report_company.pt:94
+#: src/osha/oira/client/templates/report_company.pt:97
 #: src/osha/oira/client/templates/report_identification.pt:117
 #: src/osha/oira/client/templates/report_landing.pt:100
 #: src/osha/oira/client/templates/risk_actionplan.pt:266
@@ -1296,7 +1318,7 @@ msgstr "Kirjaudu ulos"
 #: src/osha/oira/client/templates/profile.pt:96
 #: src/osha/oira/client/templates/report.pt:83
 #: src/osha/oira/client/templates/report_actionplan.pt:308
-#: src/osha/oira/client/templates/report_company.pt:95
+#: src/osha/oira/client/templates/report_company.pt:98
 #: src/osha/oira/client/templates/report_identification.pt:118
 #: src/osha/oira/client/templates/report_landing.pt:101
 #: src/osha/oira/client/templates/risk_actionplan.pt:267
@@ -1318,7 +1340,7 @@ msgstr "Omat arviointini"
 #: src/osha/oira/client/templates/register.pt:41
 #: src/osha/oira/client/templates/report.pt:84
 #: src/osha/oira/client/templates/report_actionplan.pt:309
-#: src/osha/oira/client/templates/report_company.pt:96
+#: src/osha/oira/client/templates/report_company.pt:99
 #: src/osha/oira/client/templates/report_identification.pt:119
 #: src/osha/oira/client/templates/report_landing.pt:102
 #: src/osha/oira/client/templates/risk_actionplan.pt:268
@@ -1338,7 +1360,7 @@ msgstr "Ohjeet"
 #: src/osha/oira/client/templates/module_evaluation.pt:82
 #: src/osha/oira/client/templates/report.pt:85
 #: src/osha/oira/client/templates/report_actionplan.pt:310
-#: src/osha/oira/client/templates/report_company.pt:97
+#: src/osha/oira/client/templates/report_company.pt:100
 #: src/osha/oira/client/templates/report_identification.pt:120
 #: src/osha/oira/client/templates/risk_actionplan.pt:269
 #: src/osha/oira/client/templates/risk_evaluation.pt:174
@@ -1355,7 +1377,7 @@ msgstr "Tila"
 #: src/osha/oira/client/templates/profile.pt:98
 #: src/osha/oira/client/templates/report.pt:86
 #: src/osha/oira/client/templates/report_actionplan.pt:311
-#: src/osha/oira/client/templates/report_company.pt:98
+#: src/osha/oira/client/templates/report_company.pt:101
 #: src/osha/oira/client/templates/report_identification.pt:121
 #: src/osha/oira/client/templates/report_landing.pt:103
 #: src/osha/oira/client/templates/risk_actionplan.pt:270
@@ -1477,7 +1499,7 @@ msgstr "Aloita riskien tunnistaminen"
 #: src/osha/oira/client/templates/module_actionplan.pt:52
 #: src/osha/oira/client/templates/module_evaluation.pt:38
 #: src/osha/oira/client/templates/register.pt:34
-#: src/osha/oira/client/templates/report_company.pt:53
+#: src/osha/oira/client/templates/report_company.pt:56
 #: src/osha/oira/client/templates/risk_actionplan.pt:209
 #: src/osha/oira/client/templates/risk_evaluation.pt:119
 #: src/osha/oira/client/templates/risk_identification.pt:28
@@ -1563,7 +1585,7 @@ msgstr "Lisää toinen"
 #. Default: Save and continue
 #: src/osha/oira/client/templates/profile.pt:64
 #: src/osha/oira/client/templates/report.pt:38
-#: src/osha/oira/client/templates/report_company.pt:55
+#: src/osha/oira/client/templates/report_company.pt:58
 #: src/osha/oira/client/templates/risk_actionplan.pt:211
 #: src/osha/oira/client/templates/risk_evaluation.pt:120
 #: src/osha/oira/client/templates/risk_identification.pt:29
@@ -1629,8 +1651,7 @@ msgstr ""
 #. report in this field.
 #: src/osha/oira/client/templates/report.pt:28
 msgid "label_report_comment"
-msgstr ""
-"Lisää tähän tietoja tai kommentteja, jotka haluat näkyviin raportille."
+msgstr "Lisää tähän tietoja tai kommentteja, jotka haluat näkyviin raportille."
 
 #. Default: Download
 #: src/osha/oira/client/templates/report_actionplan.pt:27
@@ -1796,7 +1817,7 @@ msgid "referer_other"
 msgstr "jokin muu"
 
 #. Default: Skip this step
-#: src/osha/oira/client/templates/report_company.pt:54
+#: src/osha/oira/client/templates/report_company.pt:57
 msgid "label_skip"
 msgstr "Sivuuta tämä vaihe"
 
@@ -1827,7 +1848,8 @@ msgstr "Raportti on hyödyksi yrityksen arjessa, sillä se:"
 
 #: src/osha/oira/client/templates/report_landing.pt:27
 msgid "Provide evidence for supervisory authorities."
-msgstr "on näyttönä riskien arvioinnista ja hallintatoimista "
+msgstr ""
+"on näyttönä riskien arvioinnista ja hallintatoimista "
 "työsuojeluviranomaisille,"
 
 #: src/osha/oira/client/templates/report_landing.pt:28
@@ -1841,8 +1863,9 @@ msgstr ""
 
 #: src/osha/oira/client/templates/report_landing.pt:29
 msgid "Monitor and assess whether necessary measures have been introduced."
-msgstr "auttaa seuraamaan ja arvioimaan, onko toimenpiteet tehty "
-"suunnitellusti ja ovatko ne vaikuttaneet halutulla tavalla sekä"
+msgstr ""
+"auttaa seuraamaan ja arvioimaan, onko toimenpiteet tehty suunnitellusti ja "
+"ovatko ne vaikuttaneet halutulla tavalla sekä"
 
 #: src/osha/oira/client/templates/report_landing.pt:30
 msgid ""
@@ -1850,8 +1873,8 @@ msgid ""
 "result of findings of any accident investigations, etc.)"
 msgstr ""
 "on helppo päivittää joko tähän sovellukseen tai tietokoneelle tallennetulle "
-"raportille. Tee päivitys aina kun työoloissa tapahtuu muutoksia (esim. "
-"uudet koneet/laitteet/tilat, uudet työntekijät, sattuneiden tapaturmien tai "
+"raportille. Tee päivitys aina kun työoloissa tapahtuu muutoksia (esim. uudet "
+"koneet/laitteet/tilat, uudet työntekijät, sattuneiden tapaturmien tai "
 "vaaratilanteiden aiheuttamat muutostarpeet jne.)."
 
 #: src/osha/oira/client/templates/report_landing.pt:35
@@ -1902,8 +1925,7 @@ msgstr "Formaatti: Office Open XML Workbook (.xlsx)"
 msgid ""
 "Contains: only the measures to be implemented to effectively manage the "
 "identified risks."
-msgstr ""
-"Sisältö: toimenpiteet havaittujen riskien hallintaan"
+msgstr "Sisältö: toimenpiteet havaittujen riskien hallintaan"
 
 #: src/osha/oira/client/templates/report_landing.pt:60
 msgid "Manage"
@@ -2221,16 +2243,6 @@ msgstr "Keskitasoinen"
 #: src/osha/oira/client/templates/risk_evaluation.pt:114
 msgid "priority_high"
 msgstr "Suuri"
-
-#. Default: Yes
-#: src/osha/oira/client/templates/risk_identification.pt:22
-msgid "label_yes"
-msgstr "Kyllä"
-
-#. Default: No
-#: src/osha/oira/client/templates/risk_identification.pt:23
-msgid "label_no"
-msgstr "Ei"
 
 #. Default: Not applicable
 #: src/osha/oira/client/templates/risk_identification.pt:24
