@@ -106,7 +106,7 @@ class ReportLanding(grok.View):
             return
 
         self.session = SessionManager.session
-        if self.session.company is None or isinstance(
+        if getattr(self.session, 'company', None) is None or isinstance(
                 self.session.company, model.Company):
             self.session.company = oshamodel.Company()
         self.nodes = self.getNodes()
