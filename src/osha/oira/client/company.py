@@ -5,6 +5,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 from zope.schema.vocabulary import SimpleTerm
 from z3c.form import button
 from euphorie.client import model
+from osha.oira.client import model as oshamodel
 from euphorie.client.company import Company as GenericCompany
 from euphorie.client.company import CompanySchema as GenericCompanySchema
 from euphorie.client.session import SessionManager
@@ -53,7 +54,7 @@ class Company(GenericCompany):
             return
         session = SessionManager.session
         if session.company is None:
-            session.company = model.Company()
+            session.company = oshamodel.Company()
         directlyProvides(session.company, CompanySchema)
         self.company = session.company
 
