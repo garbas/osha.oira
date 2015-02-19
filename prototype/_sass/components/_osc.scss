@@ -1,0 +1,81 @@
+#osc {
+	color: silver;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: #333332;
+	// padding-top: 2.5%;
+	padding-bottom: 2.5%;
+
+	-moz-transition: left 0.5s;
+	-webkit-transition: left 0.5s;
+	transition: left 0.5s;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	a {
+		color: white;
+	}
+
+	#osc-header {
+		padding: 0.7rem 2% 0.7rem 2%;
+		height: 3rem;
+
+		border-bottom: solid 1px black;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+		.pat-button.icon-cog {
+			float: right;
+			line-height: 1.8em;
+		}
+	}
+}
+
+@include screen-size(small) {
+	#osc {
+		width: 90%;
+		// overflow: auto;
+	}
+
+	.osc-on #osc {
+		left: 0;
+	}
+
+	.osc-off #osc {
+		left: -90%;
+	}
+}
+
+@include screen-size(medium) {
+	#osc {
+		width: 40%;
+	}
+
+	.osc-on #osc {
+		left: 0;
+	}
+
+	.osc-off #osc {
+		left: -40%;
+	}
+}
+
+@include screen-size(large) {
+	#osc {
+		width: 25%;
+	}
+
+	.osc-on #osc {
+		left: 0;
+	}
+
+	.osc-off #osc {
+		left: -25%;
+	}
+}

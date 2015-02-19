@@ -1,0 +1,61 @@
+// Assets
+@import "fontello/css/fontello.css";
+
+// Primary colours
+$colour-primary: #996699;
+$colour-secondary: #003399;
+$colour-base: #efefef;	
+$colour-alert: red;
+$colour-accent: #0081be;
+$colour-success: #CBF08B;
+
+// Glyps
+
+$glyph-checkbox: \f096;
+$glyph-checkbox-active: \2611;
+$glyph-radio-button: \e807;
+$glyph-radio-button-active: \e806;
+
+// Responsive breakpoints:
+$mobile:768px;
+
+// Font treatment
+$base-font-size: 18px;
+$base-line-height: 150%;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+// We use these to control various global styles
+$body-bg: white;
+$body-font-color: #222222;
+$body-font-family: 'News Cycle', sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+$base-space: 1em; // Create universal white space (e.g. margin, padding, left)
+
+// Responsive variables
+
+$break-small: 768px;
+$break-medium: 769px;
+$break-large: 1280px;
+
+// Libraries
+@import "libraries/reset";
+@import "libraries/patterns/patterns";
+
+// Project components
+@import "components/anchor";
+@import "components/ankeiler";
+@import "components/body";
+@import "components/button-bar";
+@import "components/container";
+@import "components/content";
+@import "components/logo";
+@import "components/main";
+@import "components/osc";
+@import "components/site-header";
+@import "components/steps";
+@import "components/sub-nav-bar";
+@import "components/toolbar";
+

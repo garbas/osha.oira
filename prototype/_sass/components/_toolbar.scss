@@ -1,0 +1,72 @@
+#toolbar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: $colour-primary;
+	color: white;
+
+	padding: 0.61rem 2% 0.61rem 2%;
+
+	border-bottom: silver 1px solid;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 3rem;
+
+	.pat-button {
+		color: black;	
+		color: white;
+	}
+
+	#burger {
+		padding: 0;
+		width: 2em;
+		overflow: hidden;
+		float: left;
+
+		&:before {
+			font-size: 1.5em;
+			// line-height: 1.2em;
+			float: left;
+		}
+	}
+
+	.pat-button.icon-left {
+		padding: 0 0.5em 0 0.2em;
+		max-width: 60%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		@include screen-size(medium) {
+			display: none;
+		}
+
+		@include screen-size(large) {
+			display: none;
+		}
+	}
+
+}
+
+@include screen-size(small) {
+	.focus-sidebar {
+		#toolbar .pat-button.icon-left {
+			display: none;
+		}
+
+		#toolbar #burger {
+			display: inline-block;
+		}
+	}
+
+	.focus-document {
+		#toolbar .pat-button.icon-left {
+			display: inline-block;
+		}
+
+		#toolbar #burger {
+			display: none;
+		}
+	}
+}
