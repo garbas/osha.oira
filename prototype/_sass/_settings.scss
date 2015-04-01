@@ -1,3 +1,6 @@
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700&subset=latin,greek,cyrillic-ext,cyrillic,greek-ext,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,300,700&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,latin-ext);
+
 // Assets
 @import "fontello/css/fontello.css";
 
@@ -8,6 +11,7 @@ $colour-base: #efefef;
 $colour-alert: red;
 $colour-accent: #0081be;
 $colour-success: #CBF08B;
+$colour-warning: #c16800;
 
 // Glyps
 
@@ -15,20 +19,21 @@ $glyph-checkbox: \f096;
 $glyph-checkbox-active: \2611;
 $glyph-radio-button: \e807;
 $glyph-radio-button-active: \e806;
+$glyph-close: "\e805";
 
-// Responsive breakpoints:
-$mobile:768px;
+$colour-base-font: #222222;
 
 // Font treatment
 $base-font-size: 18px;
 $base-line-height: 150%;
-$font-weight-normal: normal;
+$font-weight-normal: 300;
 $font-weight-bold: bold;
 
 // We use these to control various global styles
 $body-bg: white;
 $body-font-color: #222222;
-$body-font-family: 'News Cycle', sans-serif;
+$body-font-family: 'Roboto Condensed', sans-serif;
+// $body-font-family: 'Open Sans', sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 
@@ -42,20 +47,30 @@ $break-large: 1280px;
 
 // Libraries
 @import "libraries/reset";
+@import "libraries/animate";
 @import "libraries/patterns/patterns";
 
 // Project components
 @import "components/anchor";
+@import "components/appendix";
 @import "components/ankeiler";
 @import "components/body";
 @import "components/button-bar";
+@import "components/conditions";
 @import "components/container";
 @import "components/content";
+@import "components/form-iteration";
+@import "components/image-collage";
 @import "components/logo";
 @import "components/main";
+@import "components/measures";
+@import "components/modal";
+@import "components/more-or-less";
 @import "components/osc";
 @import "components/site-header";
+@import "components/status";
 @import "components/steps";
 @import "components/sub-nav-bar";
+@import "components/table";
 @import "components/toolbar";
 

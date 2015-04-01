@@ -17,3 +17,8 @@
 *.bak
 *.swp
 *.pt.py
+_site
+scripts/lib
+scripts/bin
+scripts/include
+prototype/.sass-cache

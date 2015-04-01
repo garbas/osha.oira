@@ -1,25 +1,27 @@
 ---
 layout: shell
 application: home
-design_title: Homepage
+design_title: Module page
 design_description: 
 ---
 
-<form method="post" action="#">
-	<fieldset class="vertical">
-		<fieldset class="pat-checklist radio">
-			<legend>The temperature of all fridges is checked daily</legend> <label><input type="radio" name="answer" value="yes" />Yes</label> 
-			<label><input type="radio" name="answer" value="no" />No</label> 
-			<label><input type="radio" name="answer" value="n/a" />Not applicable</label>
-		</fieldset>
-	</fieldset>
+<article class="rich">
+	<h1>{{ page.title }}</h1>
+	{% if page.images %}
+		{% for image in page.images %}
+			<figure>
+				<img src="{{ image.url }}" alt="" title="{{ image.caption }}">
+				{% if image.caption %}
+				    <figcaption>
+				    	{{ image.caption }}
+				    </figcaption>
+				{% endif %}
+			</figure>
+		{% endfor %}
+	{% endif %}
+	{{ content }}
+</article>
 
-	<fieldset>
-		<textarea id="commentsField" name="comments" placeholder="Please leave any comments you may have on the above question" cols="70" rows="5" class="span-15"></textarea>
-	</fieldset>
-
-	<p class="buttonBar">
-		<button type="submit" name="next" value="previous" class="pat-button back">Previous</button> 
-		<button type="submit" name="next" value="next" class="pat-button">Next</button>
-	</p>
-</form>
+<p class="buttonBar">
+	<a href="" class="pat-button">Start module</a>
+</p>

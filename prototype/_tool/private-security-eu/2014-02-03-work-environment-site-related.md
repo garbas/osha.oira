@@ -1,10 +1,14 @@
 ---
 layout: module
-id: work-environment-site-related
-number: 2.1
+fid: work-environment-site-related
+number: "2.1.0"
 parent_id: mobile-partrolling--intervention-after-alarm
 title: Work environment (site related)
 module: mobile-partrolling--intervention-after-alarm
+images:
+    - url: /media/private-security-eu/security.jpg
+      caption: 
+
 ---
 Accident statistics show that risks like **slips, trips and falls**, **getting
 stuck**, ... are very frequent in the private security services sector.

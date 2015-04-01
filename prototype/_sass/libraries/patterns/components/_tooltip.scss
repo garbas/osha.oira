@@ -1,6 +1,6 @@
 /* @group Tooltip */
 
-.tooltip-container .close-panel{
+.tooltip-container button.close-panel{
     position: absolute;
     right: 5px;
     top: 5px;
@@ -16,11 +16,11 @@
     border: none;
   }
 
-.tooltip-container .close-panel:hover {
+.tooltip-container button.close-panel:hover {
 	background-color: #7f7c71;
 }
   
-  .tooltip-container .close-panel:before {
+  .tooltip-container button.close-panel:before {
     content: "×";
 	color: white;
 	display: block;
@@ -38,17 +38,21 @@
 
   .tooltip-container {
     position: absolute;
-    z-index: 1001;
+    z-index: 9998;
     border: none;
     min-height: 50px;
     overflow: visible;
     overflow-x: visible;
     margin: 0;
     border: 1px solid silver;
--webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
--moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-	width: 300px;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+
+    &.large {
+      width: 750px;
+    }
 }
 
   .tooltip-container .pointer{
@@ -66,7 +70,7 @@ box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
   }
 
   .tooltip-container > div{
-    padding: 10px!important;
+    padding: 1.5em !important;
     z-index: 1;
     position: relative;
     padding: 0;

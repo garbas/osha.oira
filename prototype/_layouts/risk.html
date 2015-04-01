@@ -1,25 +1,69 @@
 ---
 layout: shell
-application: home
-design_title: Homepage
-design_description: 
 ---
 
 <form method="post" action="#">
 	<fieldset class="vertical">
 		<fieldset class="pat-checklist radio">
-			<legend>The temperature of all fridges is checked daily</legend> <label><input type="radio" name="answer" value="yes" />Yes</label> 
-			<label><input type="radio" name="answer" value="no" />No</label> 
-			<label><input type="radio" name="answer" value="n/a" />Not applicable</label>
+			<legend>{{ page.title }}</legend>
+			<label class="yes"><input type="radio" name="answer" value="yes" {% if page.classes contains 'answered' %}checked{% endif %} />Yes</label>
+			<label class="no"><input type="radio" name="answer" value="no" {% if page.classes contains 'answered' and page.classes contains 'risk' %}checked{% endif %} />No</label>
+			<label class="not-applicable"><input type="radio" name="answer" value="na" {% if page.classes contains 'postponed' %}checked{% endif %} />Not applicable</label>
 		</fieldset>
 	</fieldset>
+
+	<fieldset class="pat-well notice pat-depends vertical" data-pat-depends="condition: answer=no; transition: slide">
+<!-- 		<h3>
+			Evaluation
+		</h3>
+ -->
+		<fieldset class="pat-checklist radio">
+			<legend>How big is the chance on this risk?</legend>
+			<label><input type="radio" name="chance" /> Small</label>
+			<label><input type="radio" name="chance" /> Medium</label>
+			<label><input type="radio" name="chance" /> Large</label>
+		</fieldset>
+		<fieldset class="pat-checklist radio">
+			<legend>How often are people exposed to this risk?</legend>
+			<label><input type="radio" name="exposed" /> Almost never</label>
+			<label><input type="radio" name="exposed" /> Regularly</label>
+			<label><input type="radio" name="exposed" /> Continuously</label>
+		</fieldset>
+		<fieldset class="pat-checklist radio">
+			<legend>What is the effect?</legend>
+			<label><input type="radio" name="effect" /> Injury without absence</label>
+			<label><input type="radio" name="effect" /> Injury with absence</label>
+			<label><input type="radio" name="effect" /> Permanent health damage</label>
+		</fieldset>
+	</fieldset>
+
+	<article class="rich">
+		{% if page.images %}
+			{% for image in page.images %}
+				<figure>
+					<img src="{{ image.url }}" alt="" title="{{ image.caption }}">
+					{% if image.caption %}
+					    <figcaption>
+					    	{{ image.caption }}
+					    </figcaption>
+					{% endif %}
+				</figure>
+			{% endfor %}
+		{% endif %}
+		{{ page.description }}
+		{% if page.legal_reference %}
+			<h2>Legal and policy references</h2>
+			{{ page.legal_reference }}
+		{% endif %}
+	</article>
 
 	<fieldset>
 		<textarea id="commentsField" name="comments" placeholder="Please leave any comments you may have on the above question" cols="70" rows="5" class="span-15"></textarea>
 	</fieldset>
 
 	<p class="buttonBar">
-		<button type="submit" name="next" value="previous" class="pat-button back">Previous</button> 
+		<button type="submit" name="next" value="previous" class="pat-button back">Previous</button>
 		<button type="submit" name="next" value="next" class="pat-button">Next</button>
 	</p>
 </form>
+

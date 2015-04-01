@@ -1,0 +1,14 @@
+.image-collage {
+	margin: 0 -1.15em 2em;
+	overflow: hidden;
+
+	a {
+		background-size: cover;
+		background-position: center center;
+		padding: 0;
+
+		img {
+			opacity: 0;
+		}
+	}
+}
