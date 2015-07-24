@@ -921,8 +921,7 @@ msgstr "Рискове, които са били определени, но НЯ
 #: src/osha/oira/client/templates/report_actionplan.pt:55
 #: src/osha/oira/client/templates/report_actionplan.pt:187
 msgid "header_unanswered_risks"
-msgstr ""
-"Опасности/проблеми, които са били \"паркирани\" и все още очакват решение"
+msgstr "Опасности/проблеми, които не са били разгледани"
 
 #. Default: Hazards/problems that have been managed or are not present in your
 #. organisation
@@ -930,9 +929,7 @@ msgstr ""
 #: src/osha/oira/client/templates/report_actionplan.pt:63
 #: src/osha/oira/client/templates/report_actionplan.pt:221
 msgid "header_risks_not_present"
-msgstr ""
-"Опасности/проблеми, които не са разглеждани или не присъстват във вашата "
-"организация"
+msgstr "Опасности/проблеми, които се управляват"
 
 #. Default: Action plan ${title}
 #: src/osha/oira/client/report.py:637

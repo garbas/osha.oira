@@ -4,7 +4,7 @@ Changelog
 2.3.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix translation in report in BG #11913
 
 
 2.3.7 (2015-04-01)
