@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.3.8 (unreleased)
+2.3.8 (2015-07-24)
 ------------------
 
 - Fix translation in report in BG #11913
